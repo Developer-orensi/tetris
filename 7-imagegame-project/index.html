@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>혼합 테트리스</title>
+</head>
+<body>
+    <br><br>
+
+    <div class = "wrapper">
+
+        <div  style="overflow:scroll" class="game-text">
+            <br><br><br><br><br><br><br><br><br><br>
+            
+            <div id="code_0_00" id="row_plus_text">
+                <div id="ge">게임종료</div>
+            
+
+                <span id="combo_point">현재 콤보 포인트 : 0</span>
+                <br><br>
+                
+                
+                줄 추가 I(◇◇◇◇◇)</div>
+            <div class="code_0">
+                <div id="code_0_01" class = "white" font-size = "1.5rem">줄 추가 : +0 --> +1</div>
+                <div id = "code_0_02" class = "green" font-size = "1.5rem">강화 성공률 : 100%</div>
+          
+                <div id="code_0_03" class = "yellow" font-size = "1.5rem">비용 : 7</div>
+                <button id="reinforce_row_button">강화하기</button>
+
+            </div>
+
+            
+            <br>
+            <div id="code_1_00">속도 완화 I(◇◇◇◇◇)</div>
+
+            <div class="code_1">
+                <div id="code_1_01" class="white">속도 완화(+0ms --> +5ms)</div>
+                <div id="code_1_02" class="green">강화 성공률 : 100%</div>
+                <div id='code_1_03' class="yellow">비용 : 10</div>
+                <button id="reinforce_time_button">강화하기</button>
+            </div>
+
+            <br>
+            <div id="code_2_00">특별한 블록 생성 I(+0)</div>
+                <div id="code_2_01" class="white">특별한 블록 생성(0% --> 0.1%)</div>
+                <div id="code_2_02" class="green">강화 성공률 : 100%</div>
+                <div id="code_2_04"  class="red">실패시 파괴율 : 0%</div>
+                <div id="code_2_03" class="yellow">비용 : 1</div>
+                <span id="usingprot">
+                    <span class="red">보호제 사용 </span><input width="2rem" id="reinforce_protection_checkbox" type="checkbox">
+                </span>
+                 <button id="reinforce_special_button">강화하기</button>
+
+
+            <div class="settings">
+                <br><br>
+                <span color="purple">< Settings ></span><br><br>
+
+                <div id="set_rtext">
+                    오른쪽 버튼 : 왼쪽 화살표 / 없음
+                    <button id="set_rbutton">사용자 설정..</button>
+                </div>
+                
+                <div id="set_ltext">
+                    왼쪽 버튼 : 왼쪽 화살표 / 없음
+                    <button id='set_lbutton'>사용자 설정..</button>
+
+                </div>
+
+                <button id="goto10" font-size = "1.7rem">도우미</button>
+                
+
+            </div>
+            
+            
+
+
+
+
+
+            <br><br>
+            
+        
+            <div><button id="coupon_use">쿠폰 사용</button> 
+            <button id="restart">재시작</button></div>
+            
+      
+
+            
+        </div>
+
+
+        
+
+            <div class="score" color="darkblue">0</div>
+            <div class="user_interface">
+                        <div class="playground">
+                        <ul></ul>
+
+                    </div>
+                    
+            <div class="next_block">
+                NEXT
+                <ul class="next">
+                    <li id="_1">
+
+                        <ul id="ul_1">
+
+                            <li id="11"></il>
+                            <li id="12"></il>
+                            <li id="13"></il>
+                            <li id="14"></il>
+
+                        </ul>
+                    </li>
+                    <li id="_2">
+
+                        <ul id="ul_2">
+                            <li id="21"></il>
+                            <li id="22"></il>
+                            <li id="23"></il>
+                            <li id="24"></il>
+                        </ul>
+
+                    </li>
+                    <li id="_3">
+
+                        <ul id="ul_3">
+                            <li id="31"></il>
+                            <li id="32"></il>
+                            <li id="33"></il>
+                            <li id="34"></il>
+                        </ul>
+
+                    </li>
+
+                    <li id="_4">
+
+                        <ul id="ul_4">
+                            <li id="41"></il>
+                            <li id="42"></il>
+                            <li id="43"></il>
+                            <li id="44"></il>
+                        </ul>
+
+                    </li>
+
+
+
+                </ul>
+
+                <ul class="combo">
+
+                    <span id="combo_display">콤보 포인트<br><span id="combo_p">0</span></span>
+
+                </ul>
+
+                <ul class="music_button">
+
+                    <button id="music_play">음악 재생</button>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        
+
+        
+
+        <div class="button-collection">
+                        <button id='l'>◀◀</button>
+                        <button id='ld'>⏬⏬</button>
+                        <button id='r'>▶▶</button><br>
+                        <button id='d'>내리기 ⇊</button>
+                        <button id="s">돌리기 ↻</button>
+                            
+                        
+                        
+
+        </div>
+
+        <div class="sound">
+            <audio id="bgm">
+            <source id="audioSource" src='bgm.mp3' type='audio/mp3'/>   
+          </audio>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </div>
+
+
+
+    
+</body>
+</html>

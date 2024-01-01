@@ -1,0 +1,313 @@
+*{
+    margin : 0;
+    padding : 0;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+body{
+    height : 100%;
+    
+}
+
+.score{
+    flex : 7;
+    text-align: center;
+    font-size : 36px;
+    margin-bottom: 2rem;
+    color : darkblue;
+
+}
+
+.playground > ul{
+    text-align: center;
+    border : 1px solid #333;
+    width : 250px;
+    margin: 0 auto;
+}
+
+.playground > ul > li{
+    width : 100%;
+    height : 25px;
+}
+.playground > ul > li > ul{
+    display : flex;
+
+}
+.playground > ul > li > ul > li{
+    width : 25px;
+    height: 25px;
+    outline : 1px solid #ccc;
+}
+
+.tree{
+    background : #67c23a;
+}
+.bar{
+    background : salmon;
+}
+.zee{
+    background : #e6a23c;
+}
+.elLeft{
+    background : #8e44ad;
+}
+.elRight{
+    background : #16a085;
+}
+.square{
+    background : green;
+}
+
+.mono{
+    background : brown;
+}
+.domino{
+    background : yellow;
+}
+.tri_linear{
+    background :violet;
+}
+.tri_curved{
+    background : pink;
+}
+
+.pento_eleft{
+    background:turquoise;
+}
+
+
+
+
+
+.game-text{
+    display : none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position : fixed;
+    width : 100%;
+    height : 100%;
+    background : rgba(0,0,0,0.7);
+    left : 0;
+    top : 0;
+    color : #fff;
+    font-size : 50px;
+    
+
+
+}
+.game-text > #restart{
+    padding : 0.5rem 1rem;
+    font-size : 36px;
+    margin-bottom : 2rem;
+    background : salmon;
+    border : none;
+    cursor : pointer;
+
+
+}
+.game-text > #restart{
+    padding : 0.5rem 1rem;
+    font-size : 36px;
+    margin-bottom : 2rem;
+    background : salmon;
+    border : none;
+    cursor : pointer;
+
+
+}
+
+
+#l{
+    font-size : 2.5rem;
+}
+#r{
+    font-size : 2.5rem;
+}
+#s{
+    font-size : 2rem;
+}
+#d{
+    font-size : 2rem;
+}
+#ld{
+    font-size : 2rem;
+}
+/* #clear{
+    font-size : 2rem;
+} */
+
+
+.sidebar{
+    width : 200px;
+    height :auto;
+}
+
+
+.button_collection{
+    justify-content: center;
+
+}
+
+
+
+
+
+.user_interface{
+
+    display : flex;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+
+.next_block{
+    width : 120px;
+    height: 500px;
+    outline : 1px solid grey;
+}
+
+.next{
+    width : 120px;
+    height : 120px;
+    outline : 1px solid grey;
+    justify-content: center;
+}
+.next > li{
+    width : 120px;
+    height : 30px;
+    outline : 1px solid grey;
+   
+}
+.next > li > ul{
+    display : flex;
+}
+
+.next >li > ul > li{
+    width : 30px;
+    height : 30px;
+    outline : 1px solid grey;
+}
+
+
+
+.nextblock_true{
+    background-color: brown;
+    color : brown;
+}
+
+
+.combo{
+
+    height : 60px;
+    outline : 1px solid black;
+
+}
+
+
+
+
+
+#combo_point{
+    font-size: 2rem;
+}
+
+#combo_display{
+    font-size : 20px;
+    color : purple;
+}
+
+#row_plus_text{
+    font-size : 2rem;
+
+}
+
+.red{
+    color : salmon;
+    font-size : 1.5rem;
+
+
+}
+.green{
+    color : greenyellow;
+    font-size : 1.5rem;
+}
+.white{
+    color : white;
+    font-size : 1.5rem;
+}
+.yellow{
+    color : yellow;
+    font-size : 1.5rem;
+}
+
+#reinforce_row_button{
+    
+    font-size : 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+#reinforce_time_button{
+    
+    font-size : 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+
+#reinforce_special_button{
+    font-size : 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#set_lbutton{
+    font-size : 2rem;
+
+}
+#set_rbutton{
+    font-size : 2rem;
+
+}
+
+#coupon_use{
+    font-size : 2.5rem;
+    background-color : greenyellow ;
+    color : black;
+    
+    
+}
+#restart{
+    font-size : 2.5rem;
+    background-color : salmon;
+    color : black;
+}
+
+
+.settings{
+    font-size : 2rem;
+}
+
+.music_button{
+    height: 60px;
+
+}
+#music_play{
+    height : 60px;
+    width : 120px;
+}
+#code_2_04{
+    display : none;
+}
+
+#usingprot{
+    display : none;
+}
